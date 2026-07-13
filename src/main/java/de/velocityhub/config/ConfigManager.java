@@ -79,11 +79,14 @@ public final class ConfigManager {
      */
     public void reloadAll() {
         loadAll();
+        // Only delegate to managers if the plugin is fully initialized.
         VelocityHubPlugin plugin = VelocityHub.getInstance();
-        if (plugin != null) {
-            plugin.getServerManager().loadFromConfig();
-            plugin.getGroupManager().loadFromConfig();
+        if (plugin == null) {
+            logger.warn("[Config] reloadAll called before plugin initialization; skipping manager reload.");
+            return;
         }
+        plugin.getServerManager().loadFromConfig();
+        plugin.getGroupManager().loadFromConfig();
         logger.info("[Config] Configuration reloaded.");
     }
 

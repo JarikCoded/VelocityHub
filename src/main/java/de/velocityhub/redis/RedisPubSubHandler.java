@@ -20,8 +20,11 @@ public final class RedisPubSubHandler extends JedisPubSub {
 
     @Override
     public void onMessage(String channel, String message) {
+        // Obtain the plugin instance first; if null (shutdown / not yet initialized), bail out.
         VelocityHubPlugin plugin = VelocityHub.getInstance();
-        if (plugin == null) return;
+        if (plugin == null) {
+            return;
+        }
 
         try {
             JsonObject payload = JsonParser.parseString(message).getAsJsonObject();
