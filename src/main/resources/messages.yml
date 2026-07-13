@@ -1,0 +1,63 @@
+# VelocityHub Messages Configuration
+# Supports MiniMessage tags, legacy color codes (&) and HEX colors (&#RRGGBB).
+# Available placeholders: %player%, %server%, %group%, %online%, %max%, %proxy%
+
+prefix: "&8[&6VelocityHub&8] &r"
+
+errors:
+  no-permission: "&cYou do not have permission to use this command."
+  player-only: "&cThis command can only be used by players."
+  server-not-found: "&cServer &e%server% &cwas not found."
+  player-not-found: "&cPlayer &e%player% &cwas not found."
+  target-not-found: "&cNo server or group named &e%name% &cwas found."
+
+maintenance:
+  enabled: "&aMaintenance mode has been &lenabled&r&a."
+  disabled: "&cMaintenance mode has been &ldisabled&r&c."
+  broadcast-on: "&cMaintenance mode has been &lenabled&r&c by &e%player%&c."
+  broadcast-off: "&aMaintenance mode has been &ldisabled&r&a by &e%player%&a."
+  kick-message: |
+    &c&lNetwork Maintenance
+    &r
+    &7The network is currently under maintenance.
+    &7Please try again later.
+
+lobby:
+  no-server: "&cNo lobby server is currently available. Please try again later."
+
+send:
+  all: "&aSent all players to &e%destination%&a."
+  player: "&aSent &e%player% &ato &e%destination%&a."
+
+queue:
+  joined: "&aYou joined the queue for &e%server%&a. Position: &e%pos%&a."
+  left: "&cYou left the queue for &e%server%&c."
+
+private-chat:
+  send: "&7[&dYou &7→ &d%target%&7] &f%message%"
+  receive: "&7[&d%sender% &7→ &dYou&7] &f%message%"
+  no-reply-target: "&cYou have no one to reply to."
+  ignored: "&cThis player has ignored you."
+
+social-spy:
+  enabled: "&aSocial Spy &lenabled&r&a. You can now see all private messages."
+  disabled: "&cSocial Spy &ldisabled&r&c."
+  format: "&8[SocialSpy] &7%sender% &8→ &7%target%&8: &f%message%"
+
+staff-chat:
+  format: "&8[&cStaff&8] &7[%proxy%] &e%player%&7: &f%message%"
+  toggled-on: "&aStaff Chat &lenabled&r&a."
+  toggled-off: "&cStaff Chat &ldisabled&r&c."
+
+admin-chat:
+  format: "&8[&4Admin&8] &7[%proxy%] &c%player%&7: &f%message%"
+
+broadcast:
+  prefix: "&6[&lBroadcast&6] &r"
+
+join-leave:
+  join: "&e%player% &ajoined the network."
+  quit: "&e%player% &cleft the network."
+
+network:
+  reload-success: "&aConfiguration reloaded successfully."

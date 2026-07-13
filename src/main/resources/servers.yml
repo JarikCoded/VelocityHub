@@ -1,0 +1,34 @@
+# VelocityHub Servers Configuration
+# Define all servers that VelocityHub should manage.
+# The server name must match the Velocity server name in velocity.toml.
+
+servers:
+  lobby-1:
+    display-name: "&aLobby &71"
+    motd: "&7A lobby server"
+    icon: "GRASS_BLOCK"
+    max-players: 100
+
+  lobby-2:
+    display-name: "&aLobby &72"
+    motd: "&7A lobby server"
+    icon: "GRASS_BLOCK"
+    max-players: 100
+
+  survival:
+    display-name: "&6Survival"
+    motd: "&7Survive and thrive!"
+    icon: "DIAMOND_PICKAXE"
+    max-players: 200
+
+  skyblock:
+    display-name: "&bSkyblock"
+    motd: "&7Build your island!"
+    icon: "END_STONE"
+    max-players: 150
+
+  minigames-1:
+    display-name: "&dMini&5games &71"
+    motd: "&7Fun mini games!"
+    icon: "FIREWORK_ROCKET"
+    max-players: 50

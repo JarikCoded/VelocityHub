@@ -1,0 +1,42 @@
+# VelocityHub Items Configuration
+# Define custom items for the server-selection GUI.
+# Items defined here override the default server icon.
+
+items:
+  # Example: Override the icon for specific servers
+  # server-name:
+  #   material: "MATERIAL_NAME"
+  #   name: "&eCustom Name"
+  #   lore:
+  #     - "&7Custom lore line 1"
+  #     - "&7Custom lore line 2"
+
+  lobby-1:
+    material: "GRASS_BLOCK"
+    name: "&aLobby &71"
+    lore:
+      - "&7A cozy lobby server."
+
+  lobby-2:
+    material: "GRASS_BLOCK"
+    name: "&aLobby &72"
+    lore:
+      - "&7Another cozy lobby server."
+
+  survival:
+    material: "DIAMOND_PICKAXE"
+    name: "&6Survival"
+    lore:
+      - "&7Classic survival gameplay."
+
+  skyblock:
+    material: "END_STONE"
+    name: "&bSkyblock"
+    lore:
+      - "&7Build your floating island."
+
+  minigames-1:
+    material: "FIREWORK_ROCKET"
+    name: "&dMinigames"
+    lore:
+      - "&7Play fun mini games."

@@ -1,0 +1,43 @@
+# VelocityHub GUI Configuration
+# Configure the server selection inventory GUI.
+
+gui:
+  # Title shown in the inventory GUI (supports MiniMessage and legacy codes)
+  title: "&8Server &7Selection"
+  # Number of rows in the GUI (1-6)
+  rows: 6
+
+  # Background/decoration item (fills empty slots)
+  decoration:
+    enabled: true
+    material: "BLACK_STAINED_GLASS_PANE"
+    name: " "
+
+  # Navigation buttons
+  navigation:
+    previous-page:
+      material: "ARROW"
+      slot: 45
+      name: "&7← &aPrevious Page"
+    next-page:
+      material: "ARROW"
+      slot: 53
+      name: "&aNext Page &7→"
+    close:
+      material: "BARRIER"
+      slot: 49
+      name: "&cClose"
+
+  # Server item appearance
+  server-item:
+    # Lore template for each server item
+    # Placeholders: %motd%, %players%, %max%, %status%, %ping%
+    lore:
+      - "&8&m--------"
+      - "&7%motd%"
+      - ""
+      - "&7Players: &e%players%&7/&e%max%"
+      - "&7Status:  %status%"
+      - ""
+      - "&7Click to connect!"
+      - "&8&m--------"
