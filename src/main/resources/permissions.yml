@@ -1,0 +1,34 @@
+# VelocityHub Permissions Configuration
+# Reference for all permissions used by VelocityHub.
+# This file is for documentation; actual permission assignment is done in your permissions plugin.
+
+permissions:
+  # Full admin access (bypasses all permission checks)
+  network.admin: "Full administrative access to VelocityHub"
+
+  # Command permissions
+  network.server: "Use /server command"
+  network.send: "Use /send command"
+  network.lobby: "Use /l, /hub, /lobby commands"
+  network.broadcast: "Use /broadcast command"
+  network.network: "Use /network command and sub-commands"
+  network.maintenance: "Toggle maintenance mode"
+  network.maintenance.bypass: "Join the network during maintenance"
+  network.msg: "Use /msg and /reply"
+  network.socialspy: "Use /socialspy"
+  network.staffchat: "Use /staffchat"
+  network.adminchat: "Use /adminchat"
+
+  # GUI
+  network.gui: "Access the server selection GUI"
+
+  # Queue
+  "network.queue.priority.<n>": "Queue priority level (higher = earlier). Example: network.queue.priority.100"
+
+  # Wildcards
+  "network.server.*": "Wildcard for all server management permissions"
+  "network.group.*": "Wildcard for all group management permissions"
+
+  # Bypass
+  network.bypass.full: "Bypass the per-server player limit"
+  network.notify.joinleave: "Receive join/leave notifications"

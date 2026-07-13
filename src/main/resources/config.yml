@@ -1,0 +1,31 @@
+# VelocityHub Main Configuration
+# Supports MiniMessage and legacy color codes (&)
+
+# Unique identifier for this proxy instance (used for multi-proxy identification)
+proxy-id: "proxy-1"
+
+# Enable debug logging
+debug: false
+
+# Lobby configuration
+lobby:
+  # Strategy for choosing a lobby server: "lowest-players" or "round-robin"
+  strategy: "lowest-players"
+  # The group name that contains all lobby servers
+  group: "lobby"
+
+# Player settings
+player:
+  # Automatically connect players to their last server on reconnect
+  reconnect-last-server: false
+
+# Discord webhook integration
+discord:
+  webhook-url: ""
+  username: "VelocityHub"
+  avatar-url: ""
+  events:
+    broadcast: true
+    join: false
+    quit: false
+    server-status: false

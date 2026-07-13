@@ -1,0 +1,60 @@
+# VelocityHub Groups Configuration
+# Groups organize servers into categories.
+# Each group can have a lobby item that players receive when joining a server in that group.
+
+groups:
+  lobby:
+    display-name: "&aLobby"
+    servers:
+      - lobby-1
+      - lobby-2
+    item:
+      material: "COMPASS"
+      slot: 4
+      name: "&aServer &7Selection"
+      lore:
+        - "&7Click to open the"
+        - "&7server selection."
+      # Whether players can move the item in their inventory
+      movable: false
+      # Whether players can drop the item
+      droppable: false
+
+  survival:
+    display-name: "&6Survival"
+    servers:
+      - survival
+    item:
+      material: "DIAMOND_PICKAXE"
+      slot: 0
+      name: "&6Survival"
+      lore:
+        - "&7Click to join Survival."
+      movable: false
+      droppable: false
+
+  skyblock:
+    display-name: "&bSkyblock"
+    servers:
+      - skyblock
+    item:
+      material: "END_STONE"
+      slot: 1
+      name: "&bSkyblock"
+      lore:
+        - "&7Click to join Skyblock."
+      movable: false
+      droppable: false
+
+  minigames:
+    display-name: "&dMinigames"
+    servers:
+      - minigames-1
+    item:
+      material: "FIREWORK_ROCKET"
+      slot: 2
+      name: "&dMinigames"
+      lore:
+        - "&7Click to join Minigames."
+      movable: false
+      droppable: false

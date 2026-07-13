@@ -1,0 +1,11 @@
+# VelocityHub Redis Configuration
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  # Leave empty for no password
+  password: ""
+  database: 0
+  ssl: false
+  # TTL for cached keys in seconds (-1 = no expiry)
+  key-ttl-seconds: -1

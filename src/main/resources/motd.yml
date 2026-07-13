@@ -1,0 +1,7 @@
+# VelocityHub MOTD Configuration
+# Supports MiniMessage, legacy color codes (&) and HEX colors (&#RRGGBB).
+# Available placeholders: %online%, %max%
+
+motd:
+  line1: "&6&lVelocityHub &7Network"
+  line2: "&7Players: &e%online%&8/&e%max% &7| &aOnline"
